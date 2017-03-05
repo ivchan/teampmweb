@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+<div class="main">
+  <div class="top-bar">
+    <span class="top-bar-item">
+      <a href="/workspace">Workspace</a>
+    </span>
+    <span class="top-bar-item">
+      <a href="/mytask">My task</a>
+    </span>
+    <span class="top-bar-item">
+      <a href="/project">Project</a>
+    </span>
+    <span class="top-bar-item">
+      <a href="/setting">Setting</a>
+    </span>
+  </div>
+  <div class="side-bar">
+    <div>
+      <a href="/projectadd">new project</a>
+    </div>
+    <div class="side-bar-heading">
+      Latest Projects
+    </div>
+    <div class="side-bar-project-list" *ngFor="let prj of listProject; let i = index">
+      <div class="side-bar-project-list-item">
+        {{prj.projectCode}} (120)
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</div>

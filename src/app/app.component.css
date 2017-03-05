@@ -1,0 +1,22 @@
+.main  {
+  height: auto;
+  overflow: hidden;
+}
+
+.top-bar {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 1.0em;
+  background-color: rgba(26,44,80,0.93);
+  width: 100%;
+  padding: 15px;
+}
+
+.top-bar-item {
+  padding-left: 20px;
+}
+
+.content {
+
+}
